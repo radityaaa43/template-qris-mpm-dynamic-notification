@@ -6,7 +6,7 @@ header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload'
 header('Content-Type: application/json'); // Ensure all responses are JSON
 
 // url path values
-$baseUrl = 'https://api.bridex.qore.page/mock'; //base url
+$baseUrl = 'https://api.briapidevstudio.dev.bbri.io/mock'; //base url
 
 try {
   list($clientId, , $privateKey) = getCredentials();
@@ -17,7 +17,7 @@ try {
     $privateKey
   );
 
-  echo htmlspecialchars($accessToken, ENT_QUOTES, 'UTF-8');
+  echo $accessToken;
 } catch (InvalidArgumentException $e) {
   // Return a generic error message to the client
   http_response_code(400); // Bad Request

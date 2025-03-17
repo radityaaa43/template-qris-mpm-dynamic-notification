@@ -6,7 +6,7 @@ header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload'
 header('Content-Type: application/json'); // Ensure all responses are JSON
 
 // url path values
-$baseUrl = 'https://api.bridex.qore.page/mock'; //base url
+$baseUrl = 'https://api.briapidevstudio.dev.bbri.io/mock'; //base url
 
 try {
   list($clientId, $clientSecret, $privateKey) = getCredentials();
@@ -17,13 +17,13 @@ try {
     $privateKey
   );
 
-  $externalId = '';
-  $origin = '';
-  $ipAddress = '';
-  $deviceId = '';
-  $latitude = '';
-  $longitude = '';
-  $channelId = '';
+  $externalId = '41807553358950093184162180797837';
+  $origin = 'bri.co.id';
+  $ipAddress = '172.24.281.24';
+  $deviceId = '09864ADCASA';
+  $latitude = '-6.108841';
+  $longitude = '106.7782137';
+  $channelId = '95221';
 
   $validateInputs = sanitizeInput([
     'externalId' => $externalId,
@@ -49,7 +49,7 @@ try {
     $accessToken
   );
 
-  echo htmlspecialchars($response, ENT_QUOTES, 'UTF-8');
+  echo $response;
 } catch (InvalidArgumentException $e) {
   // Return a generic error message to the client
   http_response_code(400); // Bad Request
