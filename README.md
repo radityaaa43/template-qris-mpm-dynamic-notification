@@ -34,16 +34,12 @@ module:
 
 ### Get Token
 ```bash
-1. fill variable $clientId, eg: 'your_client_id'
-2. fill variable $clientSecret, eg: 'super_secret'
-3. run command `php src/get_token.php serve`
+1. run command `php src/get_token.php serve`
 ```
 
 ### Notify Payment QR MPM Dynamic
 ```bash
-1. fill variable $clientId, eg: 'your_client_id'
-2. fill variable $clientSecret, eg: 'super_secret'
-3. fill variable $externalId, eg: '41807553358950093184162180797837'
+1. fill variable $externalId, eg: '41807553358950093184162180797837'
 4. fill variable $origin, eg: 'bri.co.id',
 5. fill variable $ipAddress, eg: '172.24.281.24'
 6. fill variable $deviceId, eg: '09864ADCASA'
@@ -55,9 +51,7 @@ module:
 
 ### Get Token Dynamic
 ```bash
-1. fill variable $clientId, eg: 'your_client_id'
-2. fill variable $clientSecret, eg: 'super_secret'
-3. run command `php src/get_token_dynamic.php serve`
+1. run command `php src/get_token_dynamic.php serve`
 ```
 
 ## Caution
